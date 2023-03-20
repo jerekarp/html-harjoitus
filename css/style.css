@@ -1,0 +1,283 @@
+.container {
+    width: 80%;
+    margin: auto;
+    box-sizing: border-box;
+}
+
+.home {
+    height: 100%;
+    background-size: 100% auto;
+    background: url(/images/taustakuva.jpg) no-repeat fixed center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+
+
+.products {
+    height: 100%;
+    background-color: #e1eff2;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+header {
+    background-color: cadetblue;
+}
+
+body {
+  font-family: Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+
+body, html {
+  height: 100%;
+  overflow: hidden;
+}
+
+
+nav {
+    background-color: #303633;
+    height: 52px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+}
+
+
+main {
+    background-color: transparent;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+}
+
+
+h1 {
+    margin-top: 0;
+    font-size: 2.5rem;
+    color: #333333;
+}
+
+h2 {
+    margin-top: 0;
+    color: #333333;
+}
+
+h3 {
+    color: #8BE8CB;
+}
+
+h4 {
+    color: #333333;
+    font-size: 2.5rem;
+}
+
+section {
+    background-color: transparent;
+    margin-top: 50px;
+    padding: 20px;
+}
+
+article {
+    background-color: transparent;
+}
+
+aside {
+    background-color: transparent;
+}
+
+
+form {
+    background-color: #303633;
+    margin-left: 30px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav a {
+    color: #8BE8CB;
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+}
+
+nav li.right {
+    float: right;
+}
+
+
+footer {
+    background-color: #303633;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100px;
+    display: flex;
+    justify-content: flex-start; /* Updated */
+    align-items: center;
+}
+
+.social-media {
+    display: flex;
+    align-items: center;
+    margin-left: 10%;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-instagram {
+    background: #f09433;
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+}
+
+.fa-linkedin {
+    background: #0A66C2;
+    color: white;
+}
+
+button,
+input[type="submit"] {
+    background-color: #8BE8CB;
+    color: #333333;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+}
+
+input[type="email"] {
+    width: 200px;
+}
+
+.submit-container {
+    width: 80%;
+    margin: auto auto auto 40px;
+    box-sizing: border-box;
+}
+
+.subscribe-heading {
+    margin-right: 0;
+    margin-left: 30px;
+}
+
+@media only screen and (max-width: 480px) {
+    footer {
+        background-size: cover;
+        padding: 10px;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .social-media {
+        display: flex;
+        align-items: center;
+        margin-left: 10%;
+    }
+
+    .fa {
+        padding: 5px;
+        font-size: 8px;
+        width: 8px;
+        text-align: center;
+        text-decoration: none;
+    }
+
+    .fa-facebook {
+        background: #3B5998;
+        color: white;
+    }
+
+    .fa-twitter {
+      background: #55ACEE;
+      color: white;
+    }
+
+    .fa-instagram {
+        background: #f09433;
+        background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+        background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+        background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+    }
+
+    .fa-linkedin {
+        background: #0A66C2;
+        color: white;
+    }
+
+    input[type="email"] {
+      width: calc(100% - 90px);
+      margin-right: 10px;
+      order: 1;
+    }
+
+    button,
+    input[type="submit"] {
+      order: 0;
+    }
+
+
+    .submit-container {
+      display: flex;
+      margin-left: 30px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .subscribe-heading {
+        margin-right: 0;
+        margin-left: 30px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
