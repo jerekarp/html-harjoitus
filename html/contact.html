@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>HTML + CSS learning page</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="../css/style.css">
-</head>
-<body>
-<div class="container">
 
+<div class="contact">
+    <head>
+        <meta charset="UTF-8">
+        <title>HTML + CSS learning page</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="../css/style.css">
+    </head>
+    <body>
+    <div class="container">
     <nav>
       <ul>
         <li><a>Site Logo</a></li>
@@ -18,42 +19,60 @@
       </ul>
     </nav>
 
-    <main>
-        <section>
-            <h2>Section heading</h2>
-            <article>
-                <h3>Name of the product</h3>
-                <figure>
-                    <img src="https://via.placeholder.com/400x300" alt="some description">
-                    <figcaption>Caption about the image</figcaption>
-                </figure>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur assumenda corporis deleniti
-                    dolor in labore possimus sint. Alias error iure placeat? Commodi debitis earum magni nostrum
-                    possimus? Consequatur, fuga, soluta!</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio dolor id inventore provident
-                    quaerat quis repudiandae saepe! Ad aliquid, cupiditate, deserunt eum impedit maiores nostrum officia
-                    quisquam sit tempora tenetur!</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio dolor id inventore provident
-                    quaerat quis repudiandae saepe! Ad aliquid, cupiditate, deserunt eum impedit maiores nostrum officia
-                    quisquam sit tempora tenetur!</p>
-            </article>
-        </section>
-        <aside>
-            <ol>
-                <li>Item 1</li>
-                <li>Item 2</li>
-                <li>Item 3</li>
-            </ol>
-        </aside>
-    </main>
     <footer>
-        <h3>Subscribe to our newsletter</h3>
-        <form action="#">
-            <input type="email" name="email" placeholder="Your email address">
-            <input type="submit" value="Send">
-        </form>
+      <div class="submit-container">
+          <h3 class="subscribe-heading">Subscribe to our newsletter!</h3>
+          <form action="#">
+              <label>
+                  <input type="email" name="email" placeholder="Your email address">
+              </label>
+              <input type="submit" value="Send">
+          </form>
+      </div>
+
+      <div class="social-media">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-twitter"></a>
+        <a href="#" class="fa fa-instagram"></a>
+        <a href="#" class="fa fa-linkedin"></a>
+      </div>
     </footer>
+
+    <div class="info">
+      <table>
+        <tr>
+            <td><b>Visit us at:</b></td>
+            <td>Utopia Running Solutions Oy</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>Karaportti 2</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>02340 Espoo</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>Finland</td>
+          </tr>
+          <tr>
+            <td><b>Email:</b></td>
+            <td>info@metropolia.fi</td>
+          </tr>
+          <tr>
+            <td><b>Phone:</b></td>
+            <td>+358 (0)401231233</td>
+          </tr>
+      </table>
+    </div>
+      <img src="/images/map.jpg" alt="Map" class="map-image">
+
+
 </div>
 
-</body>
+
+    </body>
+</div>
 </html>
