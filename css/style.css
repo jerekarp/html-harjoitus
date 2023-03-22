@@ -212,6 +212,7 @@ footer {
     display: flex;
     align-items: center;
     margin-left: 10%;
+    margin-right: 4rem;
 }
 .fa {
     padding: 1.3rem;
@@ -341,6 +342,8 @@ input[type="email"] {
         display: flex;
         align-items: center;
         margin-left: 10%;
+        margin-right: 1rem;
+        margin-top: 1.5rem;
     }
     .fa {
         padding: 5px;
