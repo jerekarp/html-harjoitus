@@ -1,7 +1,7 @@
 .home {
     height: 100%;
     background-size: 100% auto;
-    background: url(/images/taustakuva.jpg) no-repeat fixed center center;
+    background: url("../css/taustakuva.jpg") no-repeat fixed center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -26,13 +26,13 @@
 
 .info {
     flex-direction: column;
-    margin-top: 19rem;
+    margin-top: 10rem;
     margin-left: 3rem;
 }
 
 .map-image {
-    width: 600px;
-    height: 400px;
+    width: 30rem;
+    height: 20rem;
     border: 1px solid black;
     object-fit: cover;
     display: block;
@@ -44,11 +44,12 @@
 }
 
 .kuva-container {
-  width: 600px;
-  height: 300px;
+  width: 35rem;
+  height: auto;
   border: 1px solid black;
   background-color: #eee;
-  text-align: center; /
+  text-align: center;
+  margin-left: 2rem;
 }
 
 .kuva-container img {
@@ -56,7 +57,7 @@
   height: 100%;
   object-fit: cover;
   display: block;
-  margin: auto;
+  margin-left: auto;
 }
 
 .container {
@@ -75,7 +76,7 @@
   box-sizing: border-box;
   width: 17rem;
   padding: 10px;
-  margin-left: 10px;
+  margin-left: 2rem;
   border: 1px solid black;
   background-color: #E1EEF7;
 }
@@ -91,16 +92,20 @@
 }
 
 .product-box button {
-  margin-top: 0.8rem;
+  margin-top: 10px;
   margin-bottom: 2rem;
 }
 
-
 header {
+    text-align: center;
 }
 
+@font-face {
+    font-family: Inter;
+    src: url("Inter-Regular.ttf") format("truetype");
+}
 body {
-  font-family: Verdana, sans-serif;
+  font-family: Inter, sans-serif;
   margin: 0;
   padding: 0;
   overflow: scroll;
@@ -111,8 +116,6 @@ body, html {
   overflow-y: hidden;
   overflow-x: hidden;
 }
-
-
 main {
     background-color: transparent;
     top: 0;
@@ -122,51 +125,46 @@ main {
     display: flex;
     flex-wrap: wrap;
 }
-
-
-
 h1 {
     margin-top: 0;
     font-size: 2.5rem;
     color: #333333;
 }
-
 h2 {
     margin-top: 0;
     color: #333333;
 }
-
 h3 {
     color: #8BE8CB;
 }
-
 h4 {
     color: #333333;
     font-size: 2.5rem;
+    margin-left: 25px;
 }
-
 h5 {
     color: #333333;
     font-size: 1.7rem;
 }
-
+h6 {
+    color: #333333;
+    font-size: 1.7rem;
+    margin-bottom: 2rem;
+}
 section {
     background-color: transparent;
-    margin-top: 50px;
-    padding: 20px;
+    margin-top: 2.5rem;
+    padding: 1.8rem;
+    margin-left: 1.8rem;
+    margin-right: 1.8rem;
 }
-
-
 aside {
     background-color: transparent;
 }
-
-
 form {
     background-color: #303633;
     margin-left: 30px;
 }
-
 nav {
     background-color: #303633;
     height: 52px;
@@ -177,69 +175,58 @@ nav {
     right: 0;
     z-index: 9999;
 }
-
 nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
 }
-
 nav li {
     display: inline-flex;
     flex-wrap: wrap;
 }
-
 nav a {
     color: #8BE8CB;
     display: block;
-    padding: 10px;
+    padding: 1rem;
     text-decoration: none;
-    margin-left: 40px;
+    margin-left: 2rem;
 }
-
 nav li.right {
     float: right;
-    margin-right: 40px;
+    margin-right: 2rem;
 }
-
-
 footer {
     background-color: #303633;
-    padding: 10px;
+    padding: 0.6rem;
     position: fixed;
     bottom: 0;
     left: 0;
     right: 0;
-    height: 100px;
+    height: 6rem;
     display: flex;
-    justify-content: flex-start; /* Updated */
+    justify-content: flex-start;
     align-items: center;
 }
-
 .social-media {
     display: flex;
     align-items: center;
     margin-left: 10%;
 }
-
 .fa {
-    padding: 20px;
+    padding: 1.3rem;
     font-size: 30px;
-    width: 50px;
+    width: 2.5rem;
     text-align: center;
     text-decoration: none;
 }
-
 .fa-facebook {
     background: #3B5998;
     color: white;
 }
-
 .fa-twitter {
   background: #55ACEE;
   color: white;
 }
-
 .fa-instagram {
     background: #f09433;
     background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
@@ -247,31 +234,26 @@ footer {
     background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
 }
-
 .fa-linkedin {
     background: #0A66C2;
     color: white;
 }
-
 button,
 input[type="submit"] {
     background-color: #8BE8CB;
     color: #333333;
     border: none;
-    padding: 5px;
+    padding: 0.4rem;
     cursor: pointer;
 }
-
 input[type="email"] {
     width: 200px;
 }
-
 .submit-container {
     width: 80%;
     margin: auto auto auto 40px;
     box-sizing: border-box;
 }
-
 .subscribe-heading {
     margin-right: 0;
     margin-left: 30px;
@@ -279,16 +261,22 @@ input[type="email"] {
 
 @media screen and (max-width: 768px) {
     .kuva-container {
-        width: 100%;
+        width: 80%;
         height: auto;
     }
-
     .kuva-container img {
         width: 100%;
         height: auto;
     }
-
-
+    section {
+        font-size: 0.8rem;
+    }
+    h1 {
+        font-size: 1.5rem;
+    }
+    h2 {
+        font-size: 1.3rem;
+    }
     nav {
         background-color: #303633;
         height: 52px;
@@ -299,7 +287,6 @@ input[type="email"] {
         right: 0;
         z-index: 9999;
     }
-
     nav ul {
         display: flex;
         flex-direction: row;
@@ -309,17 +296,14 @@ input[type="email"] {
         margin: 0;
         padding: 0;
     }
-
     nav li {
         display: inline-block;
         margin: 0;
         text-align: center;
     }
-
     nav li:nth-child(1) {
         display: none;
     }
-
     nav a {
         color: #8BE8CB;
         display: block;
@@ -328,25 +312,21 @@ input[type="email"] {
         touch-action: manipulation;
         cursor: pointer;
     }
-
     nav li.right {
         float: none;
         margin-right: 0;
     }
-
     nav li.left {
         float: none;
         margin-left: 0;
     }
-
     nav li:nth-child(2) {
         margin-right: auto;
         margin-left: 10px;
     }
-
     footer {
         background-size: cover;
-        padding: 10px;
+        padding: 1rem;
         position: fixed;
         bottom: 0;
         left: 0;
@@ -356,13 +336,11 @@ input[type="email"] {
         justify-content: flex-start;
         align-items: center;
     }
-
     .social-media {
         display: flex;
         align-items: center;
         margin-left: 10%;
     }
-
     .fa {
         padding: 5px;
         font-size: 8px;
@@ -370,17 +348,14 @@ input[type="email"] {
         text-align: center;
         text-decoration: none;
     }
-
     .fa-facebook {
         background: #3B5998;
         color: white;
     }
-
     .fa-twitter {
       background: #55ACEE;
       color: white;
     }
-
     .fa-instagram {
         background: #f09433;
         background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
@@ -388,47 +363,51 @@ input[type="email"] {
         background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
         filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
     }
-
     .fa-linkedin {
         background: #0A66C2;
         color: white;
     }
-
     input[type="email"] {
-      width: calc(100% - 90px);
+      width: calc(100% - 5rem);
       margin-right: 10px;
       order: 1;
     }
-
     button,
     input[type="submit"] {
       order: 0;
     }
-
-
     .submit-container {
       display: flex;
-      margin-left: 30px;
+      margin-left: 2rem;
       align-items: center;
       flex-wrap: wrap;
     }
-
     .subscribe-heading {
         margin-right: 0;
-        margin-left: 30px;
+        margin-left: 2rem;
     }
-
     .info {
         margin-top: 5rem;
         margin-left: 0;
         margin-bottom: -30rem;
     }
-
     .map-image {
         width: 20rem;
         height: 15rem;
         margin-left: 0;
-        margin-top: 10px;
+    }
+}
+
+@media only screen and (max-width: 1070px) and (min-width: 770px) {
+    .map-image {
+        width: 20rem;
+        height: 15rem;
+        margin-left: 0;
+    }
+    .info {
+        margin-top: 9rem;
+        margin-left: 0;
+        margin-bottom: -30rem;
     }
 }
 

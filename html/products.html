@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-<div class="products">
     <head>
         <meta charset="UTF-8">
         <title>HTML + CSS learning page</title>
@@ -8,6 +7,7 @@
         <link rel="stylesheet" type="text/css" href="../css/style.css">
     </head>
     <body>
+    <div class="products">
     <nav>
       <ul>
         <li><a>Site Logo</a></li>
@@ -18,9 +18,9 @@
     </nav>
       <h4>Products</h4>
       <div class="kuva-container">
-          <img src="/images/products.jpg" alt="Products">
+          <img src="../css/products.jpg" alt="Products">
       </div>
-          <p>We have three different training programs. Each training program is made <br>according to your personal
+          <p style="margin-left: 2rem;">We have three different training programs. Each training program is made <br>according to your personal
               requirements and levels. You will have your own <br>personal trainer at your disposal who is available for you
           10 hours a day, <br>and he/she will renew your plan every three weeks.</p>
       <div class="productscontainer">
@@ -28,7 +28,7 @@
             <div class="product-box">
               <h5>Product 1</h5>
               <img src="https://via.placeholder.com/300x300" alt="Product 1">
-              <figcaption style="color:#888888;"><i>Product 1</i></figcaption>
+              <i style="color:#888888;">Product 1</i>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur assumenda corporis deleniti
                   dolor in labore possimus sint. Alias error iure placeat?</p>
               <button>Buy this</button>
@@ -38,7 +38,7 @@
           <div class="product2">
             <div class="product-box">
               <h5>Product 2</h5><img src="https://via.placeholder.com/300x300" alt="Product 2">
-              <figcaption style="color:#888888;"><i>Product 2</i></figcaption>
+              <i style="color:#888888;">Product 2</i>
 
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur assumenda corporis deleniti
                   dolor in labore possimus sint. Alias error iure placeat?</p>
@@ -50,16 +50,13 @@
             <div class="product-box">
               <h5>Product 3</h5>
               <img src="https://via.placeholder.com/300x300" alt="Product 3">
-              <figcaption style="color:#888888;"><i>Product 3</i></figcaption>
+              <i style="color:#888888;">Product 3</i>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur assumenda corporis deleniti
                   dolor in labore possimus sint. Alias error iure placeat?</p>
               <button>Buy this</button>
             </div>
           </div>
       </div>
-
-
-
+    </div>
     </body>
-</div>
 </html>
